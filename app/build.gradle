@@ -9,13 +9,13 @@ android {
         debug {
             keyAlias 'kvtranslator'
             keyPassword '24162416'
-            storeFile file('D:/work/java/android/sproj/KVTranslator/KVTranslator2/file/kvtranslator.jks')
+            storeFile file('file/kvtranslator.jks')
             storePassword '24162416'
         }
         release {
             keyAlias 'kvtranslator'
             keyPassword '24162416'
-            storeFile file('D:/work/java/android/sproj/KVTranslator/KVTranslator2/file/kvtranslator.jks')
+            storeFile file('file/kvtranslator.jks')
             storePassword '24162416'
         }
     }
