@@ -5,6 +5,20 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
 android {
+    signingConfigs {
+        debug {
+            keyAlias 'kvtranslator'
+            keyPassword '24162416'
+            storeFile file('D:/work/java/android/sproj/KVTranslator/KVTranslator2/file/kvtranslator.jks')
+            storePassword '24162416'
+        }
+        release {
+            keyAlias 'kvtranslator'
+            keyPassword '24162416'
+            storeFile file('D:/work/java/android/sproj/KVTranslator/KVTranslator2/file/kvtranslator.jks')
+            storePassword '24162416'
+        }
+    }
     compileSdkVersion 28
     defaultConfig {
         applicationId "com.nmj.kvtranslator"
@@ -16,15 +30,16 @@ android {
     }
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
         }
     }
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation"org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
     implementation 'com.android.support:appcompat-v7:28.0.0'
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
     testImplementation 'junit:junit:4.12'
