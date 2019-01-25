@@ -1,4 +1,4 @@
-package com.nmj.kvtranslator2
+package com.nmj.kvtranslator
 
 import org.junit.Test
 
