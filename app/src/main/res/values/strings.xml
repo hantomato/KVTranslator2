@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">KVTranslator</string>
+
+    <string name="title_activity_intro">IntroActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">최초 실행시에만\n로고 띄우자</string>
+
+    <string name="title_activity_intro2">Intro2Activity</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
 </resources>
